@@ -22,7 +22,7 @@ html {scroll-behavior: smooth;}
 #botfit_wrap {max-width:1920px;width:100%;margin:0 auto;overflow:hidden;}
 #botfit_wrap .mo_only {display:none !important;}
 #botfit_wrap .desc {font-weight: 300;}
-#botfit_wrap .notice {background-color: transparent;}
+#botfit_wrap .notice {background-color: transparent;font-weight: 300;}
 strong {font-weight:700;vertical-align:baseline;}
 h2, h3, h4, h5 {font-family: 'SamsungOneKorean';}
 p {letter-spacing:0em;font-family:'SamsungOneKorean';}
@@ -148,11 +148,12 @@ span.en {vertical-align: baseline;}
 .sec_trainer {margin-bottom: 160px;}
 .sec_trainer .intro {background: url('../images/sec_trainer_pc.jpg') top center no-repeat;background-size: 1920px 1080px;}
 .trainer_effect {margin-bottom: 160px;}
-.trainer_effect .txt_box {position: absolute;left: 258px;top: 298px;color: #fff;}
-.trainer_effect .title {margin-bottom: 33px; font-size: 42px;letter-spacing: -0.005em;}
-.trainer_effect .desc {margin-bottom:21px; font-size: 24px; line-height: 1.2;letter-spacing: 0.002em;}
+.trainer_effect .txt_box {position: absolute;left: 258px;top: 296px;color: #fff;}
+.trainer_effect .title {margin-bottom: 35px; font-size: 42px;letter-spacing: -0.005em;}
+.trainer_effect .desc {margin-bottom:21px; font-size: 24px; line-height: 1.15;letter-spacing: 0.002em;}
 .trainer_effect .notice {font-size: 18px;font-weight: 300;line-height: 1.35;}
-.trainer_effect .feedback_list {display: flex;justify-content: space-between; align-items: center; position: absolute;left: 278px;top: 567px;width: 578px;}
+.trainer_effect .feedback_icon {display: flex;justify-content: space-between; position: absolute;left: 278px;top: 566px;width: 578px;}
+.trainer_effect .feedback_list {display: flex;justify-content: space-between; align-items: center; width: 266px;}
 .trainer_effect .feedback_item {display: flex;flex-direction: column;align-items: center;width: 58px;}
 .trainer_effect .feedback_item .desc {margin: 14px 0 0;font-size: 18px;font-weight: 700; white-space: nowrap;color: #fff;}
 .trainer_effect .sound_box {display: flex; align-items: center; position: absolute;left: 259px;bottom: 56px;}
@@ -194,12 +195,69 @@ span.en {vertical-align: baseline;}
 
 /* 피트니스 맞춤 디자인 */
 .sec_fitdesign .intro {margin-bottom: 140px; background: url('../images/sec_fitdesign_pc.jpg') top center no-repeat;background-size: 1920px 1080px;}
-.fitdesign_style .txt_box {display: flex;align-items: center;margin-bottom: 65px;}
+.fitdesign_style {margin-bottom: 159px;}
+.fitdesign_style .txt_box {display: flex;align-items: center;margin: 0 0 63px 17px;}
 .fitdesign_style .title {font-size: 100px;line-height: 1.2;}
-.fitdesign_style .desc {margin:0 0 109px 150px;font-size: 26px; line-height: 1.4;}
+.fitdesign_style .desc {margin:0 0 109px 134px;font-size: 26px; line-height: 1.4;}
 
-.fitdesign_style .slider {padding-bottom: 76px;}
-#botfit_wrap .fitdesign_style .slider .control {top: calc(50% - 40px); width: 1318px;}
+.fitdesign_style .slider {padding-bottom: 74px;overflow: hidden;}
+.fitdesign_style .slider .slide_tit {gap: 30px; width: 103px;}
+.fitdesign_style .slider .slide_tit > li {width: 14px; height: 14px;padding: 0; border-radius: 50%;border: 1px solid rgba(0, 0, 0, 0.5);background-color: #fff;}
+.fitdesign_style .slider .slide_tit > li.swiper-pagination-bullet-active {background-color: #000;border-color: #000;}
+#botfit_wrap .fitdesign_style .slider .control {top: calc(50% - 38px); width: 1318px;}
+
+.fitdesign_product {height: 1374px; background-color: #000;color: #fff;padding: 140px 232px;}
+.fitdesign_product .title {font-size: 100px;line-height: 1.2;}
+.fitdesign_product .product_select {display: inline-block;}
+.fitdesign_product .product_check {display: flex;justify-content: center;}
+.fitdesign_product .product_check a {color: #fff;}
+.fitdesign_product .product_item {display: none;}
+.fitdesign_product .product_item.on {display: block;}
+.fitdesign_product .product_item .img_box {width: 450px;}
+
+.fitdseign_size {height: 1373px;margin-bottom: 160px; padding-top: 115px; background: url('../images/sec_fitdseign_size_pc.jpg') bottom center no-repeat;background-size: 100%;}
+.fitdseign_size .title {margin: 0 0 37px; font-size: 42px; text-align: center;}
+.fitdseign_size .desc {font-size: 24px;text-align: center;}
+.fitdseign_size .desc span.en {letter-spacing: 0.05em;}
+.fitdseign_size .img_box {position: relative; width: 441px;margin: 430px 0 58px 362px;}
+.fitdseign_size .img_box > p {position: absolute;font-size: 22px; color: #fff;}
+.fitdseign_size .img_box > p.desc_01 {top: 88px; left:-102px;}
+.fitdseign_size .img_box > p.desc_02 {top: 382px; left:-102px;}
+.fitdseign_size .img_box > p.desc_03 {top: 445px; right: -150px;}
+.fitdseign_size .img_box > p::after {content: '';position: absolute;top: 50%;transform: translateY(-50%); height: 2px; background-color: #fff;}
+.fitdseign_size .img_box > p.desc_01::after {left: 46px;width: 200px;}
+.fitdseign_size .img_box > p.desc_02::after {left: 125px;width: 60px;}
+.fitdseign_size .img_box > p.desc_03::after {right: 107px;width: 140px;}
+.fitdseign_size .notice {font-size: 18px; font-weight: 300; line-height: 1.18; text-align: center; color: #fff;}
+
+.fitdseign_desc {display: flex;align-items: center;margin-bottom: 159px;}
+.fitdseign_desc .img_box {width: 708px;}
+.fitdseign_desc .txt_box {margin: 0 0 124px 146px;}
+.fitdseign_desc .title {margin-bottom: 26px; font-size: 42px;font-weight: 700;line-height: 1.2;}
+.fitdseign_desc .desc {font-size: 24px; line-height: 1.5;}
+
+.fitdseign_sweat {display: flex;}
+.fitdseign_sweat .img_box {width: 539px;margin-left: 90px;}
+.fitdseign_sweat .txt_box {margin: 102px 0 0 175px;}
+.fitdseign_sweat .title {margin-bottom: 38px; font-size: 100px;line-height: 1.2;}
+.fitdseign_sweat .desc {margin: 0 0 30px 6px; font-size: 24px; line-height: 1.5;}
+.fitdseign_sweat .sub_desc {margin-left: 15px; font-size: 18px;line-height: 1.2; text-indent: -13px; opacity: 0.6;}
+.fitdseign_sweat.reverse {flex-direction: row-reverse;margin-bottom: 160px;}
+.fitdseign_sweat.reverse .txt_box {margin: 250px 230px 0 0;}
+.fitdseign_sweat.reverse .img_box {width: 369px;margin: 143px 59px 0 0 ;}
+
+/* how to set up */
+.sec_howto {height: 710px;padding: 158px 260px; background:url('../images/sec_howto_pc.jpg') center no-repeat; background-size: 1920px;color: #fff;opacity: 0.2;border-bottom: 1px solid #d6d6d6;}
+.sec_howto .title {margin-bottom: 17px; font-size: 24px;letter-spacing: 0.26em;}
+#botfit_wrap .sec_howto .desc {margin-bottom: 48px; font-size: 42px; font-weight: 700;line-height: 1.2; letter-spacing: -0.01em;}
+#botfit_wrap .sec_howto .sub_desc {margin-bottom: 11px; font-size: 24px;line-height: 1.3;}
+#botfit_wrap .sec_howto .sub_desc span.en {letter-spacing: 0.05em;}
+.sec_howto .notice {margin:21px 0 0 8px;font-size: 18px; text-indent: -12px;line-height: 1.2; overflow: visible;}
+
+/* notice */
+.sec_notice {padding: 61px; background-color: #f6f6f6;color: #525252;}
+.sec_notice .notice_list {margin-bottom: 34px;}
+.sec_notice .notice_item {padding-left: 20px;font-size: 20px; font-weight: 400;font-family:'SamsungOneKorean'; line-height: 1.7; text-indent: -14px;}
 
 
 @media screen and (min-width:769px) and (max-width:1920px) {
