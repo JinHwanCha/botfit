@@ -21,6 +21,8 @@ html {scroll-behavior: smooth;}
 *{margin:0;padding:0;box-sizing:border-box;line-height:1;}
 #botfit_wrap {max-width:1920px;width:100%;margin:0 auto;overflow:hidden;}
 #botfit_wrap .mo_only {display:none !important;}
+#botfit_wrap .desc {font-weight: 300;}
+#botfit_wrap .notice {background-color: transparent;}
 strong {font-weight:700;vertical-align:baseline;}
 h2, h3, h4, h5 {font-family: 'SamsungOneKorean';}
 p {letter-spacing:0em;font-family:'SamsungOneKorean';}
@@ -146,18 +148,25 @@ span.en {vertical-align: baseline;}
 .sec_trainer {margin-bottom: 160px;}
 .sec_trainer .intro {background: url('../images/sec_trainer_pc.jpg') top center no-repeat;background-size: 1920px 1080px;}
 .trainer_effect {margin-bottom: 160px;}
-.trainer_effect .txt_box {position: absolute;left: 238px;top: 296px;color: #fff;}
+.trainer_effect .txt_box {position: absolute;left: 258px;top: 298px;color: #fff;}
 .trainer_effect .title {margin-bottom: 33px; font-size: 42px;letter-spacing: -0.005em;}
-.trainer_effect .desc {font-size: 24px; line-height: 1.2;letter-spacing: 0.01em;}
-.trainer_effect .sound_box {display: flex; align-items: center; position: absolute;left: 239px;bottom: 53px;}
-.trainer_effect .sound_box .desc {margin: 0 0 4px 23px;font-size: 20px;letter-spacing:0; color: #fff;}
+.trainer_effect .desc {margin-bottom:21px; font-size: 24px; line-height: 1.2;letter-spacing: 0.002em;}
+.trainer_effect .notice {font-size: 18px;font-weight: 300;line-height: 1.35;}
+.trainer_effect .feedback_list {display: flex;justify-content: space-between; align-items: center; position: absolute;left: 278px;top: 567px;width: 578px;}
+.trainer_effect .feedback_item {display: flex;flex-direction: column;align-items: center;width: 58px;}
+.trainer_effect .feedback_item .desc {margin: 14px 0 0;font-size: 18px;font-weight: 700; white-space: nowrap;color: #fff;}
+.trainer_effect .sound_box {display: flex; align-items: center; position: absolute;left: 259px;bottom: 56px;}
+.trainer_effect .sound_box .desc {margin: 0 0 0 25px;font-size: 20px;letter-spacing:0; color: #fff;}
+.trainer_effect .img_box.phone_01,
+.trainer_effect .img_box.phone_02 {position: absolute;right: 362px;bottom: -84px;}
+.trainer_effect .slider {overflow: hidden;background-color: #000;}
 .trainer_effect .slider .slide_tit {bottom: calc(100% - 62px); max-width: 420px;gap:30px;}
 .trainer_effect .slider .slide_tit > li {height: 2px; background: #838383;}
 .trainer_effect .slider .slide_tit > li.swiper-pagination-bullet-active {background: #fff;}
 #botfit_wrap .trainer_effect .slider .control {top: 61px; width: 580px;}
 #botfit_wrap .trainer_effect .slider .control .btn {width: 40px;height: 40px;}
-#botfit_wrap .trainer_effect .slider .control .btn.btn_prev {background: url('../images/sec_kv_prev_pc.png') rgb(255, 255, 255, 0.3) center no-repeat; background-size: 14px 23px;}
-#botfit_wrap .trainer_effect .slider .control .btn.btn_next {background: url('../images/sec_kv_next_pc.png') rgb(255, 255, 255, 0.3) center no-repeat; background-size: 14px 23px;}
+#botfit_wrap .trainer_effect .slider .control .btn.btn_prev {background: url('../images/sec_kv_prev_pc.png') rgb(131, 131, 131, 0.5) center no-repeat; background-size: 14px 23px;}
+#botfit_wrap .trainer_effect .slider .control .btn.btn_next {background: url('../images/sec_kv_next_pc.png') rgb(131, 131, 131, 0.5) center no-repeat; background-size: 14px 23px;}
 
 .trainer_indicator {position: relative; width:100%;height: 900px;background: url('../images/sec_trainer_feedback_pc.jpg') top center no-repeat;background-size: 1920px 900px;}
 .trainer_indicator .txt_box {position: absolute;left: 237px;top: 132px;color: #fff;}
@@ -178,8 +187,8 @@ span.en {vertical-align: baseline;}
 .trainer_indicator .table_box table th.kcal {width: 118px;}
 .trainer_indicator .table_box table th.heart {width: 183px;}
 .trainer_indicator .table_box table th.time {width: 127px;}
-.trainer_indicator .table_box table th.kcal::before {content: '';position: absolute;left: 50%;bottom: 100%;transform: translate(-50%, -12px);width: 23px;height: 24px;background: url('../images/sec_indicator_kcal_pc.png') center no-repeat;background-size: 100%;}
-.trainer_indicator .table_box table th.heart::before {content: '';position: absolute;left: 50%;bottom: 100%;transform: translate(-50%, -12px);width: 31px;height: 23px;background: url('../images/sec_indicator_heart_pc.png') center no-repeat;background-size: 100%;}
+.trainer_indicator .table_box table th.kcal::before {content: '';position: absolute;left: 50%;bottom: 100%;transform: translate(-50%, -12px);width: 24px;height: 24px;background: url('../images/sec_indicator_kcal_pc.png') center no-repeat;background-size: 100%;}
+.trainer_indicator .table_box table th.heart::before {content: '';position: absolute;left: 50%;bottom: 100%;transform: translate(-50%, -12px);width: 31px;height: 24px;background: url('../images/sec_indicator_heart_pc.png') center no-repeat;background-size: 100%;}
 .trainer_indicator .table_box table th.time::before {content: '';position: absolute;left: 50%;bottom: 100%;transform: translate(-50%, -12px);width: 24px;height: 26px;background: url('../images/sec_indicator_time_pc.png') center no-repeat;background-size: 100%;}
 .trainer_indicator .table_box table td span {font-size: 16px;vertical-align: bottom;}
 
@@ -188,6 +197,9 @@ span.en {vertical-align: baseline;}
 .fitdesign_style .txt_box {display: flex;align-items: center;margin-bottom: 65px;}
 .fitdesign_style .title {font-size: 100px;line-height: 1.2;}
 .fitdesign_style .desc {margin:0 0 109px 150px;font-size: 26px; line-height: 1.4;}
+
+.fitdesign_style .slider {padding-bottom: 76px;}
+#botfit_wrap .fitdesign_style .slider .control {top: calc(50% - 40px); width: 1318px;}
 
 
 @media screen and (min-width:769px) and (max-width:1920px) {
